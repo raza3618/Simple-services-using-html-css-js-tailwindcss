@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-yellow-100 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="text-2xl font-semibold text-gray-800">
+                <a href="#"><img src="logotext.png" class="size-11" /></a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <nav class="space-x-4">
+                    <a href="#about" class="text-gray-800 hover:text-yellow-500">About us</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">Home</a>
+                    <a href="#services" class="text-gray-800 hover:text-yellow-500">Services</a>
+                    <a href="#ourwork" class="text-gray-800 hover:text-yellow-500">Our work</a>
+                    <a href="#blogs" class="text-gray-800 hover:text-yellow-500">Blogs</a>
+                    <a href="#contact" class="text-gray-800 hover:text-yellow-500">Contact us</a>
+                </nav>
+                <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-400 transition-colors">
+                    Let's Connect
+                </button>
+            </div>
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-800 p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Section -->
+    <div id="mobileMenu" class="md:hidden hidden bg-yellow-100 p-4">
+        <nav class="space-y-4">
+            <a href="#" class="block text-gray-800 hover:text-yellow-500 text-center">Home</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500 text-center">About us</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500 text-center">Services</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500 text-center">Our Work</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500 text-center">Blogs</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500 text-center">Contact us</a>
+            <button
+                class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-400 transition-colors w-full mt-4">
+                Let's Connect
+            </button>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="w-full h-screen bg-cover bg-center herobackground">
+        <div class="container mx-auto h-full flex flex-col justify-center items-center text-center px-4">
+            <h1 class="text-5xl font-semibold leading-tight mb-4 text-white">
+                Your Partner in Digital Growth
+            </h1>
+            <p class="text-lg mb-6 max-w-3xl text-white mx-auto">
+                We create stunning websites, build next-gen mobile apps, and deliver
+                custom software solutions to transform your business. With data-driven
+                digital marketing strategies, we help you connect, engage, and grow in
+                the digital age.
+            </p>
+            <p class="text-lg mb-8 max-w-3xl mx-auto text-white">
+                Let’s Build Something Extraordinary Together.
+            </p>
+            <a href="#consultation"
+                class="bg-yellow-500 text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-colors">Get
+                Your Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <div id="about" class="aboutusbackground relative bg-cover bg-center bg-no-repeat">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="py-20 relative z-10">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl font-extrabold mb-4 text-transparent bg-clip-text text-yellow-300 to-orange-500">
+                    About AAA Digital
+                </h1>
+                <p class="text-xl mb-8 text-gray-300">
+                    Your Trusted Partner in Digital Transformation
+                </p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 py-16 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-yellow-300">Who We Are</h2>
+                    <p class="text-gray-200 mb-6 leading-relaxed">
+                        We are a team of passionate experts committed to understanding
+                        your unique business needs and crafting tailored digital solutions
+                        that solve real-world problems. At AAA Digital, we pride ourselves
+                        on being more than just a service provider—we’re a strategic
+                        partner who is invested in your long-term success.
+                    </p>
+                    <p class="text-gray-200 leading-relaxed">
+                        Our expertise in web development, mobile apps, custom software,
+                        and digital marketing allows us to address the core challenges you
+                        face, ensuring measurable results and a strong online presence.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-yellow-300">Our Mission</h2>
+                    <p class="text-gray-200 mb-6 leading-relaxed">
+                        Our mission is to simplify complex digital problems and provide
+                        your business with the tools, strategies, and expertise needed to
+                        succeed. Whether you're struggling with low website traffic, poor
+                        user engagement, or needing a reliable online store, we provide
+                        customized, high-performance solutions designed to elevate your
+                        business.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-200 space-y-2">
+                        <li>Improve your website’s performance and user experience</li>
+                        <li>Develop mobile apps that engage your customers</li>
+                        <li>Craft targeted digital marketing strategies</li>
+                        <li>Boost your SEO rankings with proven techniques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Our Services
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Transform your digital presence with our tailored solutions.
+                </p>
+            </div>
+            <div class="swiper-container relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-gray-200">
+                        <div class="rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                Web Development
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Maximize your online impact with fast, responsive websites.
+                            </p>
+                            <ul class="list-disc list-inside text-gray-600 mb-6">
+                                <li>Custom Websites</li>
+                                <li>E-Commerce Development</li>
+                                <li>WordPress & Shopify Development</li>
+                                <li>Website Redesign</li>
+                                <li>SEO Optimization</li>
+                            </ul>
+                            <button
+                                class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                                Get Started
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-gray-200">
+                        <div class="rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                Mobile App Development
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Elevate your mobile presence with intuitive and user-friendly
+                                mobile apps.
+                            </p>
+                            <ul class="list-disc list-inside text-gray-600 mb-6">
+                                <li>Mobile App Development</li>
+                                <li>Cross-Platform Development</li>
+                                <li>App Maintenance & Updates</li>
+                                <li>App UI/UX Design</li>
+                                <li>App Optimization</li>
+                            </ul>
+                            <button
+                                class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                                Request Consultation
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-gray-200">
+                        <div class="rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                E-Commerce Solutions
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Maximize your online sales with custom e-commerce platforms.
+                            </p>
+                            <ul class="list-disc list-inside text-gray-600 mb-6">
+                                <li>Custom E-Commerce Platforms</li>
+                                <li>Payment Gateway Integration</li>
+                                <li>E-Commerce App Development</li>
+                                <li>Product Management Systems</li>
+                                <li>E-Commerce Analytics</li>
+                            </ul>
+                            <button
+                                class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                                Build Your Store
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section id="ourwork" class="text-animation-section">
+        <div class="container mx-auto text-center">
+            <h1 class="animated-text-left">Our Work</h1>
+            <h1 class="animated-text-right second">Our Work</h1>
+        </div>
+    </section>
+    <div class="relative h-screen w-full overflow-hidden">
+        <div id="slides-container" class="flex h-full transition-transform duration-500 ease-in-out">
+            <div class="min-w-full h-full relative bg-cover bg-center flex items-end" 
+                style="background-image: url('project1.jpg')">
+                <div class="bg-black/50 p-8 text-white w-full">
+                    <h3 class="text-2xl font-bold">E-Commerce Website</h3>
+                    <p>MountWorks Outdoors - Increased sales by 150%</p>
+                </div>
+            </div>
+            <div class="min-w-full h-full relative bg-cover bg-center flex items-end"
+                style="background-image: url('project2.jpg')">
+                <div class="bg-black/50 p-8 text-white w-full">
+                    <h3 class="text-2xl font-bold">Corporate Website</h3>
+                    <p>Kinetic Systems - Boosted lead generation</p>
+                </div>
+            </div>
+            <div class="min-w-full h-full relative bg-cover bg-center flex items-end"
+                style="background-image: url('project3.jpg')">
+                <div class="bg-black/50 p-8 text-white w-full">
+                    <h3 class="text-2xl font-bold">Portfolio Website</h3>
+                    <p>
+                        ArtHouse Collective - Improved brand reputation, and client
+                        engagement.
+                    </p>
+                </div>
+            </div>
+            <div class="min-w-full h-full relative bg-cover bg-center flex items-end"
+                style="background-image: url('project4.jpg')">
+                <div class="bg-black/50 p-8 text-white w-full">
+                    <h3 class="text-2xl font-bold">On-Demand Delivery App</h3>
+                    <p>QuickDrop Logistics - Enhanced operational efficiency</p>
+                </div>
+            </div>
+            <div class="min-w-full h-full relative bg-cover bg-center flex items-end"
+                style="background-image: url('project5.jpg')">
+                <div class="bg-black/50 p-8 text-white w-full">
+                    <h3 class="text-2xl font-bold">Fitness App</h3>
+                    <p>MotionFit - Boosted app retention,user engagement</p>
+                </div>
+            </div>
+            <div class="min-w-full h-full relative bg-cover bg-center flex items-end"
+                style="background-image: url('project6.jpg')">
+                <div class="bg-black/50 p-8 text-white w-full">
+                    <h3 class="text-2xl font-bold">Shopify Store</h3>
+                    <p>EchoCycle Sports - Increased conversion rates,boosted sales.</p>
+                </div>
+            </div>
+            <div class="min-w-full h-full relative bg-cover bg-center flex items-end"
+                style="background-image: url('project7.jpg')">
+                <div class="bg-black/50 p-8 text-white w-full">
+                    <h3 class="text-2xl font-bold">WooCommerce Store</h3>
+                    <p>
+                        UrbanRoots Apparel - Increased conversions and repeat customer
+                        visits.
+                    </p>
+                </div>
+            </div>
+            <div class="min-w-full h-full relative bg-cover bg-center flex items-end"
+            style="background-image: url('project8.jpg')">
+            <div class="bg-black/50 p-8 text-white w-full">
+                <h3 class="text-2xl font-bold">SEO Strategy</h3>
+                <p>LuxeFit Wellness - 40% increase in organic traffic</p>
+            </div>
+        </div>
+        </div>
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+            <div class="w-3 h-3 rounded-full bg-white cursor-pointer indicator active"></div>
+            <div class="w-3 h-3 rounded-full bg-gray-400 cursor-pointer indicator"></div>
+            <div class="w-3 h-3 rounded-full bg-white cursor-pointer indicator"></div>
+            <div class="w-3 h-3 rounded-full bg-white cursor-pointer indicator"></div>
+            <div class="w-3 h-3 rounded-full bg-white cursor-pointer indicator"></div>
+            <div class="w-3 h-3 rounded-full bg-white cursor-pointer indicator"></div>
+            <div class="w-3 h-3 rounded-full bg-white cursor-pointer indicator"></div>
+            <div class="w-3 h-3 rounded-full bg-white cursor-pointer indicator"></div>
+        </div>
+        <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-gray-300">
+            ‹
+        </button>
+        <button id="next" class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-4xl hover:text-gray-300">
+            ›
+        </button>
+    </div>
+
+
+    <!-- BLogs -->
+
+
+    <div id="blogs" class="container mx-auto px-6 py-16">
+        <h1 class="text-5xl text-center font-bold mb-12 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent pb-2">
+          Blogs
+        </h1>
+      
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="flex flex-col justify-center">
+            <h1 class="text-4xl font-bold mb-6 text-gray-800">
+              Unlock the Secrets to Digital Success: Expert Insights & Strategies
+            </h1>
+            <h3 class="text-gray-600 mb-6 text-lg leading-relaxed">
+              Stay ahead of the curve with actionable tips, industry trends, and proven strategies. From web development to digital marketing, discover how to boost your business and drive results.
+            </h3>
+            <a href="#" class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              Read More
+            </a>
+          </div>
+      
+          <div class="grid md:grid-cols-3 gap-3">
+            <div class="w-full overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <a href="blog1.html" class="block">
+                <img class="w-full h-40 object-cover rounded-lg" src="blog1.jpg" alt="">
+                <p class="mt-2 text-sm text-gray-700 font-medium text-center">Future of Web Development: Trends for 2025</p>
+              </a>
+            </div>
+            <div class="w-full overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <a href="blog2.html" class="block">
+                <img class="w-full h-40 object-cover rounded-lg" src="blog2.jpg" alt="">
+                <p class="mt-2 text-sm text-gray-700 font-medium text-center">Responsive Design: Crucial for Business in 2025</p>
+              </a>
+            </div>
+            <div class="w-full overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <a href="blog3.html" class="block">
+                <img class="w-full h-40 object-cover rounded-lg" src="blog3.jpg" alt="">
+                <p class="mt-2 text-sm text-gray-700 font-medium text-center">Build an E-Commerce Website That Converts</p>
+              </a>
+            </div>
+            <div class="w-full overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <a href="blog4.html" class="block">
+                <img class="w-full h-40 object-cover rounded-lg" src="blog4.jpg" alt="">
+                <p class="mt-2 text-sm text-gray-700 font-medium text-center">Boost E-Commerce Performance with Optimization</p>
+              </a>
+            </div>
+            <div class="w-full overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <a href="blog5.html" class="block">
+                <img class="w-full h-40 object-cover rounded-lg" src="blog5.jpg" alt="">
+                <p class="mt-2 text-sm text-gray-700 font-medium text-center">Website Security: Critical for E-Commerce</p>
+              </a>
+            </div>
+            <div class="w-full overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <a href="blog6.html"class="block">
+                <img class="w-full h-40 object-cover rounded-lg" src="blog6.jpg" alt="">
+                <p class="mt-2 text-sm text-gray-700 font-medium text-center">Top E-Commerce Security Features for 2025</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Contact us Section -->
+
+      <div id="contact" class="bg-gray-50 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 class="text-4xl font-bold text-center text-gray-800 mb-12">Contact Us</h1>
+          <div class="grid sm:grid-cols-2 gap-12 bg-white p-8 rounded-xl shadow-lg">
+            <div>
+              <h2 class="text-3xl font-bold text-gray-800">Let's Talk</h2>
+              <p class="text-gray-600 mt-4">
+                Have a big idea or brand to develop and need help? Reach out—we'd love to hear about your project and provide assistance.
+              </p>
+      
+              <!-- Email Section -->
+              <div class="mt-12">
+                <h3 class="text-lg font-bold text-gray-800">Email</h3>
+                <div class="mt-4 flex items-center">
+                  <div class="bg-blue-50 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="darkyellow" viewBox="0 0 479.058 479.058">
+                      <path
+                        d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
+                        data-original="#000000" />
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <p class="text-sm text-gray-600">Mail</p>
+                    <a href="mailto:info@example.com" class="text-yellow-700 font-semibold hover:text-yellow-800">aaadigitalsolution@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Socials Section -->
+              <div class="mt-12">
+                <h3 class="text-lg font-bold text-gray-800">Socials</h3>
+                <div class="mt-4 flex space-x-4">
+                  <a href="#" class="bg-black p-3 rounded-full hover:transform hover:scale-110 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow" viewBox="0 0 24 24">
+                      <path
+                        d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z"
+                        data-original="#000000" />
+                    </svg>
+                  </a>
+                  <a href="#" class="bg-black p-3 rounded-full hover:transform hover:scale-110 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow" viewBox="0 0 511 512">
+                      <path
+                        d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352 .5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c20.313-16.294 44.852-24.907 70.953-24.907 62.598 0 113.524 50.926 113.524 113.523zm0 0"
+                        data-original="#000000" />
+                    </svg>
+                  </a>
+                  <a href="#" class="bg-black p-3 rounded-full hover:transform hover:scale-110 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow" viewBox="0 0 24 24">
+                      <path
+                        d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+            <form class="space-y-4">
+              <input type="text" placeholder="Name"
+                class="w-full rounded-lg py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-none focus:ring-2 focus:ring-yellow-400 focus:bg-white transition-all" />
+              <input type="email" placeholder="Email"
+                class="w-full rounded-lg py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-none focus:ring-2 focus:ring-yellow-400 focus:bg-white transition-all" />
+              <input type="text" placeholder="Subject"
+                class="w-full rounded-lg py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-none focus:ring-2 focus:ring-yellow-400 focus:bg-white transition-all" />
+              <textarea placeholder="Message" rows="6"
+                class="w-full rounded-lg px-4 py-3 bg-gray-100 text-gray-800 text-sm outline-none focus:ring-2 focus:ring-yellow-400 focus:bg-white transition-all"></textarea>
+              <button type="submit"
+                class="w-full bg-yellow-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

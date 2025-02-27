@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="bg-yellow-100 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="text-2xl font-semibold text-gray-800">
+                <a href="#"><img src="logotext.png" class="size-11" /></a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <nav class="space-x-4">
+                    <a href="index.html" class="text-gray-800 hover:text-yellow-500">Home</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">About us</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">Services</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">Our work</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">Blogs</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">Contact us</a>
+                </nav>
+                <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-400 transition-colors">
+                    Let's Connect
+                </button>
+            </div>
+
+            <!-- for mobile -->
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-800 p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden bg-yellow-100 p-4">
+        <nav class="space-y-4">
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">Home</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">About us</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">Services</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">Our Work</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">Blogs</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">Contact us</a>
+            <button
+                class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-400 transition-colors w-full mt-4">
+                Button
+            </button>
+        </nav>
+    </div>
+
+    <header class="relative bg-gradient-to-r from-indigo-600 to-purple-500 text-white py-20 text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold">How Cross-Platform Apps Are Changing the Game in 2025</h1>
+            <p class="text-lg md:text-xl mt-4">Save Time & Money with a Single Codebase</p>
+        </div>
+    </header>
+
+    <!-- Blog Content Section -->
+    <main class="container mx-auto px-6 py-16 max-w-4xl">
+        <article>
+            <h2 class="text-3xl font-bold text-indigo-600 mb-4">Introduction</h2>
+            <p class="text-lg leading-relaxed mb-6">
+                In 2025, cross-platform app development is leading the way for businesses looking to build apps for both Android and iOS. In this blog, we’ll explore why cross-platform development is a game-changer and how it can save you time and money while expanding your reach.
+            </p>
+
+            <h2 class="text-3xl font-bold text-indigo-600 mb-4">Why Cross-Platform Development is a Game-Changer</h2>
+
+            <!-- Feature Cards -->
+            <div class="space-y-6">
+                <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-indigo-500">
+                    <h3 class="text-xl font-semibold text-gray-800">📱 Single Codebase, Double Reach</h3>
+                    <p class="text-gray-600">Develop your app for both iOS and Android simultaneously using a single codebase, saving you time and development costs.</p>
+                </div>
+
+                <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-500">
+                    <h3 class="text-xl font-semibold text-gray-800">⚡ Faster Time to Market</h3>
+                    <p class="text-gray-600">Cross-platform development allows businesses to launch apps faster, gaining a competitive advantage.</p>
+                </div>
+
+                <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-green-500">
+                    <h3 class="text-xl font-semibold text-gray-800">🌎 Wider Audience Reach</h3>
+                    <p class="text-gray-600">By targeting both major mobile platforms, you maximize your reach and grow your user base.</p>
+                </div>
+            </div>
+
+            <h2 class="text-3xl font-bold text-indigo-600 mt-10 mb-4">How Cross-Platform Development Saves You Time and Money</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-yellow-500">
+                    <h3 class="text-xl font-semibold text-gray-800">💰 Cost Efficiency</h3>
+                    <p class="text-gray-600">Develop once, deploy everywhere. With a single codebase, you reduce development costs and save on maintenance.</p>
+                </div>
+
+                <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-red-500">
+                    <h3 class="text-xl font-semibold text-gray-800">🔄 Faster Iteration and Updates</h3>
+                    <p class="text-gray-600">Changes are implemented across both platforms at once, improving efficiency and ensuring consistency.</p>
+                </div>
+            </div>
+
+            <h2 class="text-3xl font-bold text-indigo-600 mt-10 mb-4">Real-World Success Story</h2>
+            <p class="text-lg text-gray-600">
+                We built a cross-platform delivery app using React Native for a logistics company. The app seamlessly works on both Android and iOS, increasing operational efficiency and customer satisfaction. After launch, the app saw a 
+                <span class="font-bold text-green-500">30% boost in user engagement</span> and helped the business streamline its delivery processes.
+            </p>
+
+            <h2 class="text-3xl font-bold text-indigo-600 mt-10 mb-4">Conclusion</h2>
+            <p class="text-lg text-gray-700">
+                Cross-platform apps are the future of mobile development. If you want to save on development costs, reach more users, and launch faster, cross-platform development is the right choice for you. <br>
+                <span class="font-semibold text-purple-500">Ready to build your next mobile app?</span> Contact us today and let’s create something amazing.
+            </p>
+
+            <div class="mt-8 text-center">
+                <a href="#" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition">
+                    Build Your Mobile App Today
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

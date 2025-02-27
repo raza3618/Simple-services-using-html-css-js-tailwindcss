@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="bg-yellow-100 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="text-2xl font-semibold text-gray-800">
+                <a href="#"><img src="logotext.png" class="size-11" /></a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <nav class="space-x-4">
+                    <a href="index.html" class="text-gray-800 hover:text-yellow-500">Home</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">About us</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">Services</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">Our work</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">Blogs</a>
+                    <a href="#" class="text-gray-800 hover:text-yellow-500">Contact us</a>
+                </nav>
+                <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-400 transition-colors">
+                    Let's Connect
+                </button>
+            </div>
+
+            <!-- for mobile -->
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-800 p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden bg-yellow-100 p-4">
+        <nav class="space-y-4">
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">Home</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">About us</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">Services</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">Our Work</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">Blogs</a>
+            <a href="#" class="block text-gray-800 hover:text-yellow-500">Contact us</a>
+            <button
+                class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-400 transition-colors w-full mt-4">
+                Button
+            </button>
+        </nav>
+    </div>
+
+    <header class="relative bg-gradient-to-r from-purple-600 to-blue-500 text-white py-20 text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold">Top 5 Web Development Trends to Watch in 2025</h1>
+            <p class="text-lg md:text-xl mt-4">Stay Ahead of Competitors with Cutting-Edge Technologies</p>
+        </div>
+    </header>
+
+    <!-- Blog Content Section -->
+    <main class="container mx-auto px-6 py-16 max-w-4xl">
+        <article>
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Introduction</h2>
+            <p class="text-lg leading-relaxed mb-6">
+                The world of web development is evolving fast. To stay ahead of your competitors and ensure that your website delivers exceptional user experiences, you need to adopt the latest trends. In this blog, we explore 5 must-know web development trends in 2025 and how implementing these features can give your business a competitive edge.
+            </p>
+
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Top 5 Web Development Trends in 2025</h2>
+
+            <!-- Trend Cards -->
+            <div class="space-y-6">
+                <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-purple-500">
+                    <h3 class="text-xl font-semibold text-gray-800">🤖 AI Integration for Smarter Websites</h3>
+                    <p class="text-gray-600">AI is revolutionizing how websites interact with users. From chatbots that assist customers 24/7 to personalized recommendations that increase sales, AI enhances user experience and boosts engagement.</p>
+                </div>
+
+                <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-500">
+                    <h3 class="text-xl font-semibold text-gray-800">⚡ Progressive Web Apps (PWAs)</h3>
+                    <p class="text-gray-600">PWAs offer the best of both worlds by combining the speed and engagement of mobile apps with the reach of the web. PWAs deliver an app-like experience that is fast, reliable, and accessible—even offline.</p>
+                </div>
+
+                <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-green-500">
+                    <h3 class="text-xl font-semibold text-gray-800">🎤 Voice Search Optimization</h3>
+                    <p class="text-gray-600">With voice assistants gaining popularity, optimizing your site for voice search is more important than ever. Voice search queries are often conversational, and optimizing your content for these phrases can improve your visibility on search engines.</p>
+                </div>
+
+                <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-yellow-500">
+                    <h3 class="text-xl font-semibold text-gray-800">🌙 Dark Mode Design</h3>
+                    <p class="text-gray-600">The dark mode trend continues to grow in popularity, providing users with a sleek, visually appealing alternative. Offering dark mode on your website increases user satisfaction and engagement, particularly for those using devices at night.</p>
+                </div>
+
+                <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-red-500">
+                    <h3 class="text-xl font-semibold text-gray-800">🎨 Interactive Web Design & Motion UI</h3>
+                    <p class="text-gray-600">Motion UI and interactive web elements are transforming websites into dynamic, engaging experiences. Implementing interactive features such as animated buttons or transitions can significantly improve user retention and engagement.</p>
+                </div>
+            </div>
+
+            <h2 class="text-3xl font-bold text-blue-600 mt-10 mb-4">How Adopting These Trends Can Help Your Business</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-3">
+                <li>🚀 <span class="font-semibold text-blue-500">Increased User Engagement:</span> Engaging features keep users on your site longer.</li>
+                <li>📈 <span class="font-semibold text-green-500">Higher Conversion Rates:</span> Modern design and technology improve trust and lead to more sales.</li>
+                <li>🔍 <span class="font-semibold text-yellow-500">Better SEO Rankings:</span> Optimized web performance helps your website rank higher in search results.</li>
+            </ul>
+
+            <h2 class="text-3xl font-bold text-blue-600 mt-10 mb-4">Real-World Example</h2>
+            <p class="text-lg text-gray-600">
+                We recently redesigned a client’s website using the latest web development trends, including motion UI and PWA technology. The results were astounding, with a <span class="font-bold text-green-500">40% increase in traffic</span> and <span class="font-bold text-yellow-500">25% more leads</span> within a month of launch.
+            </p>
+
+            <h2 class="text-3xl font-bold text-blue-600 mt-10 mb-4">Conclusion</h2>
+            <p class="text-lg text-gray-700">
+                By embracing these 2025 web development trends, your business can stand out, provide better user experiences, and see improved conversion rates. <br>
+                <span class="font-semibold text-purple-500">Ready to future-proof your website?</span> Contact us to implement these trends and take your site to the next level.
+            </p>
+
+            <div class="mt-8 text-center">
+                <a href="#" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                    Upgrade Your Website Today
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

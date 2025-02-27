@@ -1,0 +1,119 @@
+body {
+    overflow-x: hidden;
+}
+
+.herobackground {
+    background-image: url('herobackground.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutusbackground {
+    background-image: url('aboutus.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #3B82F6 !important;
+}
+
+.swiper-slide {
+    width: 49% !important;
+    margin: 0 auto;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.02);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #3B82F6 !important;
+}
+
+.text-animation-section {
+    padding: 20px 0;
+    background-color: #f9fafb;
+    overflow: hidden;
+}
+
+.animated-text-left,
+.animated-text-right {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    white-space: nowrap;
+}
+
+.animated-text-left {
+    animation: moveLeftToRight 6s linear infinite;
+    color: #666;
+}
+
+.animated-text-right {
+    color: #666;
+    animation: moveRightToLeft 6s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-65%);
+    }
+    100% {
+        transform: translateX(65%);
+    }
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(65%);
+    }
+    100% {
+        transform: translateX(-65%);
+    }
+}
+
+#projects-prev,
+#projects-next {
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#projects-prev:hover,
+#projects-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.project-indicator {
+    transition: background-color 0.3s ease;
+}
+
+.project-indicator.active {
+    background-color: white;
+}
+
+.project-indicator:not(.active) {
+    background-color: gray;
+}
+
+@media only screen and (max-width: 640px) {
+    .swiper-slide {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
